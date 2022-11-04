@@ -2,7 +2,6 @@ import Helper from '@ember/component/helper';
 
 export default class currency extends Helper {
   compute(params, hash = {}) {
-    console.log(params, 'params');
     const [number] = params;
     const { sign = '$' } = hash;
     const dollars = Math.floor(number);
